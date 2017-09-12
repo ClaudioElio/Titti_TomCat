@@ -1,5 +1,5 @@
 FROM tomcat
 FROM maven
-RUN ["ls -la"]
+RUN ["ls"]
 RUN ["mvn", "verify"]
 COPY target/*.war /usr/local/tomcat/webapps
